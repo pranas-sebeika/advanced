@@ -15,7 +15,7 @@ public class Uzduotis1 {
 	}
 
 	private static String ivesti() {
-		System.out.println("ENTER ANY WORD");
+		System.out.println("ENTER A SENTENCE");
 		Scanner scanner = new Scanner(System.in);
 
 		return scanner.next();
