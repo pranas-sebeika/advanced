@@ -1,4 +1,4 @@
-package code.academy;
+package code.academy.draft;
 
 import java.util.Scanner;
 
@@ -12,6 +12,7 @@ public class Uzduotis1 {
 		String z1 = sakinys.substring(indeksas1, indeksas2);
 
 		System.out.println("Pirmas sakinio žodis: " + z1 + ".");
+
 	}
 
 	private static String ivesti() {
@@ -20,5 +21,7 @@ public class Uzduotis1 {
 
 		return scanner.next();
 	}
+
+
 
 }
