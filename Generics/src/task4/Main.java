@@ -19,7 +19,7 @@ public class Main {
 
         ListOfNumbers result1 = findWithMaxAverage(listObject1, listObject2, listObject3);
         ListOfNumbers result2 = findWithMaxAverage(listObject1, listObject2);
-        
+
         System.out.println(result1);
         System.out.println(result2);
     }

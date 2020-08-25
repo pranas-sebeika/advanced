@@ -4,7 +4,7 @@ package task3;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Maping<K, V> {
+public class Mapping<K, V> {
 
     private List<Pair<K, V>> pairs = new ArrayList<>();
 
@@ -13,11 +13,12 @@ public class Maping<K, V> {
     }
 
     public V get(K k) {
-        return pairs.stream()
+        Pair<K, V> pair = pairs.stream()
                 .filter(x -> x.getK().equals(k))
                 .findAny()
-                .get()
-                .getV();
+                .orElse(null);
+
+        return pair != null ? pair.getV() : null;
     }
 
 }
